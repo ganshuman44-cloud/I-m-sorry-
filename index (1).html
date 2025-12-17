@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I'm Sorry ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffe4ec, #fff7d6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: #ffffff;
+      max-width: 420px;
+      width: 90%;
+      border-radius: 24px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    h1 {
+      color: #ff4d6d;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #555;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .kitty {
+      font-size: 80px;
+      margin: 10px 0;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    .hearts {
+      font-size: 26px;
+      margin: 10px 0;
+      animation: float 3s infinite;
+    }
+    @keyframes float {
+      0% { opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { opacity: 0.6; }
+    }
+    button {
+      margin-top: 20px;
+      background: #ff4d6d;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s;
+    }
+    button:hover {
+      transform: scale(1.05);
+      background: #e63b5c;
+    }
+    .hidden-message {
+      display: none;
+      margin-top: 15px;
+      font-size: 15px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="kitty">🐱</div>
+    <h1>I'm Really Sorry 🥺</h1>
+    <p>
+      My cute kitty is saying <b>sorry</b> on my behalf ❤️<br />
+      I know I was busy these last few days,
+      but not a single moment I forgot you.
+    </p>
+
+    <div class="hearts">💖 💕 💗 💞</div>
+
+    <p>
+      You mean the world to me 🌍<br />
+      Please don't stay angry… your smile is my favorite thing 😘
+    </p>
+
+    <button onclick="showMessage()">Click for a Hug 🤗</button>
+
+    <div class="hidden-message" id="msg">
+      🐾 *Kitty hugs you tightly* 🐾<br />
+      I promise to make more time for you ❤️<br />
+      Thank you for being patient with me 💐
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('msg').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
+
+
